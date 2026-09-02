@@ -139,7 +139,8 @@ Download the pre-processed Seurat object from Figshare:
 # Option 1: Using wget
 wget -O SeuratObject_TNBC.rds https://figshare.com/ndownloader/files/36286674
 
-# Option 2: Manual download from DOI: 10.6084/m9.figshare.17058077
+# Option 2: Manual download
+DOI: 10.6084/m9.figshare.17058077
 ```
 
 ### 4. Run the analysis
