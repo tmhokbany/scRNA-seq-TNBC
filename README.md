@@ -105,13 +105,31 @@ cd scRNA-seq-TNBC-analysis
 Install required R packages:
 
 ```r
-install.packages(c("Seurat", "ggplot2", "dplyr", "tidyr", "pheatmap", 
-                   "RColorBrewer", "viridis", "gridExtra", "cowplot", "patchwork"))
-
 if (!require("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
-BiocManager::install(c("SingleCellExperiment", "scater", "scran"))
+BiocManager::install("Seurat")
+install.packages(c("ggplot2", "dplyr", "pheatmap", "viridis"))
+
+# Or, for a reproducible install pinned to the exact versions this was
+# developed with, use renv instead (see "Reproducible environment" below):
+# install.packages("renv")
+# renv::restore()
 ```
+
+#### Reproducible environment (recommended)
+
+This repo includes an [`renv`](https://rstudio.github.io/renv/) lockfile
+(`renv.lock`) pinning the exact R and package versions the analysis was
+developed with. Open `scRNA-seq-TNBC-analysis.Rproj` in RStudio (renv
+activates automatically), then run:
+
+```r
+renv::restore()
+```
+
+This installs matching versions of Seurat, ggplot2, dplyr, pheatmap, and
+viridis (plus their dependencies) into a project-local library, so results
+don't silently drift as packages update over time.
 
 ### 3. Download Dataset
 
@@ -126,9 +144,11 @@ wget -O SeuratObject_TNBC.rds https://figshare.com/ndownloader/files/36286674
 
 ### 4. Run the analysis
 
-Open `TNBC analysis.R` in RStudio (or run it with `Rscript`), set your working
-directory to this folder as instructed at the top of the script, and run it.
-Output plots and tables are written to `analysis_output_tnbc/`.
+Open `TNBC_analysis.R` in RStudio (or run it with `Rscript TNBC_analysis.R`),
+set your working directory to this folder as instructed at the top of the
+script, and run it. Gene marker lists, cluster labels, and other constants
+live in `config.R`, which is sourced automatically. Output plots and tables
+are written to `analysis_output_tnbc/`.
 
 ---
 
@@ -154,7 +174,8 @@ Cytokeratin 19 and ER Stress: Bambang IF, Lu D, Li H, et al. (2009). Cytokeratin
 PERP as p53 Target: Attardi LD, Reczek EE, Cosmas C, et al. (2000). PERP, an apoptosis-associated target of p53, is a novel member of the PMP-22/gas3 family. Genes & Development, 14(6):704-718. DOI: 10.1101/gad.14.6.704
 
 # License
-This project is for academic research purposes. Please cite appropriately if using this work.
+This project is licensed under the [MIT License](LICENSE). If you use this
+code, please cite it — see [`CITATION.cff`](CITATION.cff).
 
 Author: Tala Alhokbany
 
