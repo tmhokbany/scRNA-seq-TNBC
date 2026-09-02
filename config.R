@@ -45,12 +45,9 @@ stromal_validation_markers <- c("PDGFRA", "PDGFRB", "COL1A1", "COL1A2",
 immune_clusters <- c("T_cells", "Myeloid_Cells", "Activated_Immune_Cells", "B_Cells_Plasma")
 caf_cluster <- "CAF"
 
-# NOTE: this cluster -> label mapping reflects the identities found for THIS
+# this cluster -> label mapping reflects the identities found for THIS
 # specific dataset/run at resolution = 0.2 (10 clusters, numbered 0-9 by
-# Seurat's FindClusters). It is not a general-purpose mapping: if you rerun
-# clustering on different data, a different Seurat/R version, or a different
-# resolution, cluster numbers can come out in a different order and this
-# mapping will need to be redone by inspecting marker genes per cluster.
+# Seurat's FindClusters).
 TNBC.cluster.ids <- c(
     "0" = "Tumor_Epithelial",
     "1" = "T_cells",
