@@ -173,10 +173,6 @@ Cytokeratin 19 and ER Stress: Bambang IF, Lu D, Li H, et al. (2009). Cytokeratin
 
 PERP as p53 Target: Attardi LD, Reczek EE, Cosmas C, et al. (2000). PERP, an apoptosis-associated target of p53, is a novel member of the PMP-22/gas3 family. Genes & Development, 14(6):704-718. DOI: 10.1101/gad.14.6.704
 
-# License
-This project is licensed under the [MIT License](LICENSE). If you use this
-code, please cite it — see [`CITATION.cff`](CITATION.cff).
-
 Author: Tala Alhokbany
 
 Supervisor: Dr. Hannah Al-Mubarak
