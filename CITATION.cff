@@ -6,7 +6,6 @@ authors:
     given-names: Tala
 date-released: 2026-02-01
 url: "https://github.com/tmhokbany/scRNA-seq-TNBC-analysis"
-license: MIT
 keywords:
   - single-cell RNA-seq
   - triple-negative breast cancer
