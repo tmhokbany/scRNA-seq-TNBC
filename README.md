@@ -5,7 +5,7 @@
 [![scRNA-seq](https://img.shields.io/badge/scRNA--seq-10x_Genomics-orange.svg)](https://www.10xgenomics.com/)
 [![GEO](https://img.shields.io/badge/Dataset-GSE161529-red.svg)](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE161529)
 
-> A single-cell transcriptomic atlas of the TNBC tumor microenvironment identifying cellular populations driving antigen presentation suppression, characterizing their functional states, and discovering candidate markers for therapeutic intervention.
+A single-cell transcriptomic atlas of the TNBC tumor microenvironment identifying cellular populations driving antigen presentation suppression, characterizing their functional states, and discovering candidate markers for therapeutic intervention.
 
 ---
 
