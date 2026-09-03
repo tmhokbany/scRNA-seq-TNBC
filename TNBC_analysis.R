@@ -15,7 +15,7 @@ for(pkg in packages_needed) {
 }
 
 # Set your working directory to the folder containing SeuratObject_TNBC.rds
-# before running this script, e.g.: setwd("~/path/to/scRNA-seq-TNBC-analysis")
+# before running this script like: setwd("~/path/to/scRNA-seq-TNBC-analysis")
 
 source("config.R")
 
